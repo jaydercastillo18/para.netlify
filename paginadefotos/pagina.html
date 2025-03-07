@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir y Ver Fotos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sube tus Fotos</h1>
+        <label for="fileInput" class="upload-box">
+            <span>Selecciona imágenes</span>
+            <input type="file" id="fileInput" accept="image/*" multiple>
+        </label>
+        <div class="carousel-container">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel" id="carousel"></div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
